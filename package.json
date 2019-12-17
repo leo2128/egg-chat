@@ -32,7 +32,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-egg-simple --sticky",
     "stop": "egg-scripts stop --title=egg-server-egg-simple",
-    "dev": "egg-bin dev --sticky",
+    "dev": "egg-bin dev --sticky --port 8212",
     "debug": "egg-bin debug",
     "test": "egg-bin test",
     "test-local": "egg-bin test",
