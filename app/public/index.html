@@ -11,10 +11,12 @@
 <body>
     <div class="wrap">
         <div class="content">
-            <button class="send" id="send">注册账号</button>
-            <button class="send" id="load">登录账号</button>
-            <button class="send" id="creat">创建房间</button>
-            <button class="send" id="join">加入房间</button>
+            <div class="margin-auto">
+                <button class="send" id="send">注册账号</button>
+                <button class="send" id="load">登录账号</button>
+                <button class="send" id="creat">创建房间</button>
+                <button class="send" id="join">加入房间</button>
+            </div>
             <p id="chat-name" class="chat-title">聊天室</p>
             <div class="msg-wrap">
                 <!-- <pre id="message" class="message"></pre> -->
@@ -78,6 +80,7 @@
         var $closeRoom = $('.close-room');
         var $onmessage = $('.online-message');
         var $errormessage = $('.error-message');
+        var $chatTitle = $('#chat-name')
 
         var list = [];
         var roomList = [];
@@ -140,6 +143,7 @@
                         let { id, roomName } = res.data
                         console.log(id);
                         console.log(roomName);
+                        $chatTitle.html(roomName)
                         sessionStorage.setItem('roomInfo', JSON.stringify({ roomId: id, roomName }))
                         isLoadJoin();
                         $chatWrap.hide();
@@ -184,6 +188,7 @@
                     return roomId === item.room_id
                 })
                 roomName = selectObj[0].room_name
+                $chatTitle.html(roomName)
                 sessionStorage.setItem('roomInfo', JSON.stringify({ roomId, roomName }))
                 isLoadJoin();
                 $('.room-wrap').hide()
@@ -535,7 +540,7 @@
             let roomInfo = JSON.parse(sessionStorage.getItem('roomInfo'))
             if(info || roomInfo) {
                 info ? (userName = info.userName, userId = info.userId) : 0
-                roomInfo ? roomId = roomInfo.roomId : 0
+                roomInfo ? (roomId = roomInfo.roomId, roomName = roomInfo.roomName, $chatTitle.html(roomName)) : 0
                 if (roomId) {
                     let params = {
                         roomId: roomId

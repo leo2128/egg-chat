@@ -100,3 +100,7 @@ html, body, .wrap, .content, .dialog-wrap {
     background: tan;
     margin-left: 10px;
 }
+.margin-auto {
+    width: 1000px;
+    margin: 0 auto;
+}

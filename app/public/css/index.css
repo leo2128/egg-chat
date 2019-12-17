@@ -15,8 +15,7 @@ body {
 .msg-wrap {
     margin: 0 auto;
     position: relative;
-    top: 40%;
-    margin-top: -350px;
+    margin-top: 20px;
     height: 700px;
     width: 1000px;
     border: 1px solid rgb(0, 171, 238);
