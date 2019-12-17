@@ -15,7 +15,7 @@
             <button class="send" id="load">登录账号</button>
             <button class="send" id="creat">创建房间</button>
             <button class="send" id="join">加入房间</button>
-            <p id="chat-name">聊天室</p>
+            <p id="chat-name" class="chat-title">聊天室</p>
             <div class="msg-wrap">
                 <!-- <pre id="message" class="message"></pre> -->
                 <div class="personal-list">
@@ -38,6 +38,14 @@
                 <p class="dialog-title"><span class="action-txt">登录</span>账号<i class="close">x</i></p>
                 <label for="name">账号：<input id="name" type="text" placeholder="请输入账号"></label>
                 <button id="sub" class="action-txt">登录</button>
+            </div>
+        </div>
+        <!-- 房间选择 -->
+        <div class="dialog-wrap room-wrap">
+            <div class="dialog">
+                <p class="dialog-title">加入房间<i class="close close-room-s">x</i></p>
+                <label for="room-select">房间名称：<select id="room-select" type="text" placeholder="请输入房间名称"></select></label>
+                <button id="sub-join" class="action-txt">加入</button>
             </div>
         </div>
         <!-- 创建聊天室 -->
@@ -72,7 +80,8 @@
         var $errormessage = $('.error-message');
 
         var list = [];
-        var name = '';
+        var roomList = [];
+        var userName = '';
         var userId = null;
         var roomId = null;
         var socket = null;
@@ -87,10 +96,8 @@
         creatBtn();
         // 登录
         loadInput();
-        // 是否已加入房间
-        isJoin();
         // 是否已登录
-        isLoad();
+        isLoadJoin();
 
         // 创建房间
         function creatBtn() {
@@ -134,8 +141,7 @@
                         console.log(id);
                         console.log(roomName);
                         sessionStorage.setItem('roomInfo', JSON.stringify({ roomId: id, roomName }))
-                        isJoin()
-                        isLoad();
+                        isLoadJoin();
                         $chatWrap.hide();
                         clearInput();
                         alert('创建成功!')
@@ -150,35 +156,56 @@
             }
         }
 
-        // 加入房间
+        // 加入房间 事件集合
         function joinBtn() {
+            // 加入房间 弹窗出现
             $(document).on('click', '#join', function(){
                 joinRoom()
             })
 
+            // 创建房间 close
             $(document).on('click', '.close-room', function() {
                 $chatWrap.hide()
             })
+
+            // 选择房间 close
+            $(document).on('click', '.close-room-s', function() {
+                $('.room-wrap').hide()
+            })
+            
+            // 选择 房间名称
+            $(document).on('change', '#room-select', function() {
+                roomId = +$(this).val()
+            })
+
+            // 进入房间
+            $(document).on('click', '#sub-join', function() {
+                let selectObj =  roomList.filter(item => {
+                    return roomId === item.room_id
+                })
+                roomName = selectObj[0].room_name
+                sessionStorage.setItem('roomInfo', JSON.stringify({ roomId, roomName }))
+                isLoadJoin();
+                $('.room-wrap').hide()
+                console.log(roomName)
+            })
         }
 
+        // 获取房间列表 打开弹窗
         function joinRoom() {
-            var room=prompt("请输入房间名称", '');
-            if (room == 'null' || room == 'undefined' || room == '') {
-                alert('请输入正确的房间名称')
-            } else {
-                $.get('/getRoom/', { roomName: room }, (res) => {
-                    if(res.code == 10000){
-                        let data = res.data;
-                        if(!data) {
-                            errormessage(res.message)
-                        } else {
-                            sessionStorage.setItem('roomInfo', JSON.stringify({ roomId: data.room_id, roomName: data.room_name }))
-                            isJoin();
-                            isLoad();
-                        }
-                    }
-                })
-            }
+            $.get('/room/list', function(res) {
+                if (res.code === 10000) {
+                    roomList = res.data
+                    roomId = roomList[0].room_id
+                    roomName = roomList[0].room_name
+                    var str = ``;
+                    roomList.map(item => {
+                        str += `<option value="${item.room_id}">${item.room_name}</option>`
+                    })
+                    $('#room-select').html(str)
+                    $('.room-wrap').show()
+                }
+            })
         }
         // 获取人员列表
         function getMembers(roomId) {
@@ -198,13 +225,16 @@
                 }
             })
         }
+        
         // 连接成功
         function connection() {
             // 建立连接
             socket.on('connect', function(data) {
                 console.log('连接成功');
-                // 获取成员列表
-                getMembers(roomId)
+                setTimeout(function(){
+                    // 获取成员列表
+                    getMembers(roomId)
+                }, 500)
             })
             // 连接失败重新连接
             socket.on('connect_failed', function(data) {
@@ -238,8 +268,12 @@
                     errormessage(`您已被踢出房间`)
                     setTimeout(function(){
                         sessionStorage.removeItem('info')
-                        window.location.reload()
-                    }, 500)
+                        delete userId
+                        delete userName
+                        getMembers(roomId)
+                        getMsgList()
+                        isIfLogin()
+                    }, 800)
                 } else {
                     errormessage(data.message)
                     getMembers(roomId)
@@ -271,6 +305,7 @@
             return str.trim();
         }
 
+        // 消息列表渲染
         function renderHtml (list) {
             let html = ``;
             list.map(item => {
@@ -310,14 +345,14 @@
             // 提交
             $sub.on('click', function(e) {
                 e.preventDefault();
-                name = $('#name').val();
+                userName = $('#name').val();
                 if ($actionTxt.html() == '注册') {
                     var params = {
-                        name: name
+                        name: userName
                     }
                     addInfo(params)
                 } else {
-                    getUserInfo(name)
+                    getUserInfo(userName)
                 }
             })
             // 关闭
@@ -341,6 +376,8 @@
             let tim = new Date().getTime();
             if (!name) {
                 alert('请先登录')
+            } else if (!roomId) {
+                alert('请先加入房间')
             } else {
                 if(msg) {
                     let params = { msg: msg, msg_time: tim, from_user_name: name, from_user_id: userId, room_id: roomId}
@@ -367,8 +404,8 @@
                     // 点击 x 将成员踢出聊天室
                     if ($target.hasClass('del')) {
                         uid = $target.parent().data('uid')
-                        name = Trim($target.parent()[0].firstChild.nodeValue)
-                        let params = { id: uid, name  }
+                        userName = Trim($target.parent()[0].firstChild.nodeValue)
+                        let params = { id: uid, name: userName  }
                         console.log(params, '删除好友')
                         // 触发 踢出成员 方法
                         socket.emit('delMember', params);
@@ -408,10 +445,10 @@
                     if (res.code === 10000) {
                         $userWrap.hide();
                         clearInput();
-                        name = params.name
+                        userName = params.name
                         userId = res.data.id
-                        sessionStorage.setItem('info', JSON.stringify({ userId: userId, userName: name }))
-                        isLoad();
+                        sessionStorage.setItem('info', JSON.stringify({ userId, userName }))
+                        isLoadJoin();
                     }
                 },
                 error: (error) => {
@@ -445,7 +482,7 @@
                     $userWrap.hide();
                     clearInput();
                     alert('登录成功')
-                    isLoad();
+                    isLoadJoin();
                 } else {
                     alert('暂无此账号')
                 }
@@ -478,8 +515,9 @@
                         str += `<li data-id="${item.id}" 
                                 data-uid="${item.userId}" 
                                 class="${isChangeRole(item, myLevel)}">
-                                ${item.userName} ${ info.userName == item.userName ? '<span class="list-me">我</span>' : '' }${item.level == 2 ? '<i>群主</i>' : myLevel > 0 ? '<span class="set-manager">set</span><span class="del">x</span>' : ''}
+                                ${item.userName} ${ info.userName == item.userName ? '<span class="list-me">我</span>' : '' }${item.level == 2 ? '<i>群主</i>' : myLevel > 0 ? '<span class="del">x</span>' : ''}
                             </li>`
+                            // <span class="set-manager">set</span> // 设置管理员 下期
                     }
                 } else {
                     str += `<li data-id="${item.id}" 
@@ -491,45 +529,38 @@
             })
             $('#members').html(str)
         }
-        function isJoin() {
-            let info = JSON.parse(sessionStorage.getItem('roomInfo'))
-            if (info && info.roomId) {
-                $('#chat-name').html(info.roomName)
-                document.title = info.roomName
-                roomId = info.roomId;
-                socket = io(ip, {
-                    query: {
+        // 登录校验
+        function isLoadJoin() {
+            let info = JSON.parse(sessionStorage.getItem('info'))
+            let roomInfo = JSON.parse(sessionStorage.getItem('roomInfo'))
+            if(info || roomInfo) {
+                info ? (userName = info.userName, userId = info.userId) : 0
+                roomInfo ? roomId = roomInfo.roomId : 0
+                if (roomId) {
+                    let params = {
                         roomId: roomId
                     }
-                });
-                getMsgList();
-                // 建立长连接
-                connection();
-            }
-        }
-        // 登录校验
-        function isLoad() {
-            let info = JSON.parse(sessionStorage.getItem('info'))
-            if(info) {
-                name = info.userName
-                userId = info.userId
-                if (roomId) {
+                    userId ? params['userId'] = userId : 0
+                    userName ? params['userName'] = userName : 0
                     socket = io(ip, {
-                        query: {
-                            roomId: roomId,
-                            userId: userId,
-                            userName: name
-                        }
+                        query: params
                     });
-                    setTimeout(function(){
-                        getMembers(roomId)
-                    }, 100)
+                    connection()
                     // 聊天消息列表
                     getMsgList();
+                    isIfLogin(userId)
                 }
-                // 登录之后置灰
+                
+            }
+        }
+        function isIfLogin(userId) {
+            // 登录之后置灰
+            if (userId) {
                 $set.addClass('not-click')
                 $load.addClass('not-click')
+            } else {
+                $set.removeClass('not-click')
+                $load.removeClass('not-click')
             }
         }
         // 获取cookie

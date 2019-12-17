@@ -14,7 +14,11 @@ body {
 }
 .msg-wrap {
     margin: 0 auto;
-    height: calc(100vh - 60px);
+    position: relative;
+    top: 40%;
+    margin-top: -350px;
+    height: 700px;
+    width: 1000px;
     border: 1px solid rgb(0, 171, 238);
     display: flex;
 }
@@ -174,4 +178,10 @@ body {
 }
 .disnone {
     pointer-events: none;
+}
+/* 选择房间 */
+.room-wrap select {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
 }

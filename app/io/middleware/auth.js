@@ -75,6 +75,7 @@ module.exports = () => {
       console.log(joinResult, '添加关联关系');
       try {
         const members = await ctx.service.rooms.getRoomMember(roomId);
+        console.log(members, 'members  => members join');
         //   加入之后，获取 更新人员列表数据
         const userList = getMemberList(members);
         nsp.to(roomId).emit('online', {
@@ -83,7 +84,6 @@ module.exports = () => {
           target: 'participator',
           message: '有新成员加入聊天室',
         });
-        console.log(members, 'members  => members join');
         console.log(userList, 'members  => members join');
       } catch (error) { throw error; }
       socket.join(roomId);

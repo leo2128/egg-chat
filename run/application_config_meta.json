@@ -1,339 +1,338 @@
 {
   "logger": {
-    "level": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "allowDebugAtProd": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "dir": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "encoding": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "env": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "outputJSON": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "coreLogName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "agentLogName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "errorLogName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+    "level": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "allowDebugAtProd": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "dir": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "encoding": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "env": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.local.js"
+      "consoleLevel": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.local.js"
     }
   },
-  "keys": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-  "middleware": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
+  "keys": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+  "middleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
   "static": {
-    "prefix": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "dir": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "dynamic": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-static/config/config.default.js",
-    "preload": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-static/config/config.default.js"
+    "prefix": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "dir": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "dynamic": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-static/config/config.default.js"
   },
   "news": {
-    "pageSize": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "serverUrl": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js"
+    "pageSize": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "serverUrl": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js"
   },
-  "proxy": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
+  "proxy": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
   "mysql": {
     "client": {
-      "host": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-      "port": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-      "user": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-      "password": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-      "socketPath": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-      "database": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js"
+      "host": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+      "port": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+      "user": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+      "password": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+      "database": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js"
     },
-    "app": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "agent": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
+    "app": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "agent": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
     "default": {
-      "database": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-mysql/config/config.default.js",
-      "connectionLimit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-mysql/config/config.default.js"
+      "database": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-mysql/config/config.default.js"
     }
   },
   "cors": {
-    "origin": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-    "allowMethods": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js"
+    "origin": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+    "allowMethods": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js"
   },
   "security": {
     "csrf": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-      "type": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "useSession": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "cookieName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "sessionName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "headerName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "bodyName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+      "type": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.local.js",
-      "maxAge": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "policy": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js",
-      "checkAddress": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+      "ipBlackList": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
     }
   },
   "io": {
-    "init": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
+    "init": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
     "namespace": {
       "/": {
-        "connectionMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-        "packetMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js"
+        "connectionMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+        "packetMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js"
       },
       "/chat": {
-        "connectionMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js",
-        "packetMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js"
+        "connectionMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js",
+        "packetMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js"
       }
     }
   },
   "robot": {
-    "ua": "/Users/aaron/Documents/doc/personal/node/egg-test/config/config.default.js"
+    "ua": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/config.default.js"
   },
   "session": {
-    "maxAge": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-session/config/config.default.js"
+    "maxAge": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security/config/config.default.js"
+    "shtml": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-jsonp/config/config.default.js",
-    "callback": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-jsonp/config/config.default.js",
-    "csrf": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-jsonp/config/config.default.js"
+    "limit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-onerror/config/config.default.js",
-    "templatePath": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-onerror/config/config.default.js"
+    "errorPageUrl": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n/config/config.default.js",
-    "dirs": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n/config/config.default.js",
-    "queryField": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n/config/config.default.js",
-    "cookieField": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n/config/config.default.js",
-    "cookieDomain": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n/config/config.default.js",
-    "cookieMaxAge": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n/config/config.default.js"
+    "defaultLocale": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-watcher/config/config.local.js",
+    "type": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
-      "default": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-watcher/config/config.default.js",
-      "development": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-watcher/config/config.default.js"
+      "default": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-schedule/config/config.default.js",
-      "file": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-schedule/config/config.default.js"
+      "consoleLevel": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-schedule/config/config.default.js"
+    "directory": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "autoFields": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "fields": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "fileSize": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "files": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "whitelist": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js",
+    "mode": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart/config/config.default.js"
+      "cron": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "development": {
-    "watchDirs": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-development/config/config.default.js"
+    "watchDirs": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-development/config/config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js",
-    "hourDelimiter": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js",
-    "filesRotateBySize": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js",
-    "maxFiles": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js",
-    "rotateDuration": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js",
-    "maxDays": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator/config/config.default.js"
   },
   "view": {
-    "root": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-view/config/config.default.js",
-    "defaultViewEngine": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-view/config/config.default.js"
+    "root": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-view/config/config.default.js"
   },
-  "env": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "name": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "maxIpsCount": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "maxProxyCount": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "protocolHeaders": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "ipHeaders": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "hostHeaders": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+  "env": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "name": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "version": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "description": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "private": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+    "name": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "version": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "description": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "private": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
     "egg": {
-      "declarations": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "declarations": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
-      "egg": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-cors": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-mysql": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-socket.io": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-static": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "moment": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "socket.io-client": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "socket.io-redis": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "egg": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-socket.io": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-static": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "moment": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "socket.io-client": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "socket.io-redis": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "autod": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "autod-egg": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-bin": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-ci": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "egg-mock": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "eslint": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "eslint-config-egg": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "autod": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "node": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "stop": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "dev": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "debug": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "test": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "test-local": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "cov": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "lint": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "ci": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "autod": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "start": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "stop": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "dev": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "debug": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "test": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "cov": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "lint": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "ci": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "autod": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "ci": {
-      "version": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "version": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "repository": {
-      "type": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "url": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "type": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "url": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
-    "author": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "license": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "author": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "license": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "HOME": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+  "baseDir": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "ignore": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "notFound": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "sitefile": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "middlewares": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "httpClient": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "bodyparser": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "pageUrl": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "/favicon.ico": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "strict": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+    "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "strict": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "depth": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "arrayLimit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "depth": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
-    "onerror": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "onerror": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+    "enableDNSCache": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "timeout": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "logging": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "enable": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "logging": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "workerStartTimeout": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-  "serverTimeout": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
+  "coreMiddleware": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "port": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-      "hostname": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "port": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js",
-    "responseTimeout": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+    "maxWaitTime": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/config.default.js"
+  "onClientError": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/config.default.js"
 }

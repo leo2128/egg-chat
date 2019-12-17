@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,8 +88,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -135,14 +135,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/aaron/Documents/doc/personal/node/egg-test/app/public",
+      "dir": "/Users/aaron/Documents/doc/personal/node/egg-chat/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/aaron/Documents/doc/personal/node/egg-test/app/view",
+      "root": "/Users/aaron/Documents/doc/personal/node/egg-chat/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -160,12 +160,11 @@
       "app": true,
       "agent": false,
       "client": {
-        "host": "localhost",
+        "host": "47.94.196.225",
         "port": "3306",
         "user": "root",
         "password": "<String len: 8>",
-        "socketPath": "/tmp/mysql.sock",
-        "database": "koa_sql"
+        "database": "chat"
       }
     },
     "io": {
@@ -231,7 +230,7 @@
       "scripts": {
         "start": "egg-scripts start --daemon --title=egg-server-egg-simple --sticky",
         "stop": "egg-scripts stop --title=egg-server-egg-simple",
-        "dev": "egg-bin dev --sticky",
+        "dev": "egg-bin dev --sticky --port 8212",
         "debug": "egg-bin debug",
         "test": "egg-bin test",
         "test-local": "egg-bin test",
@@ -250,9 +249,9 @@
       "author": "leo",
       "license": "MIT"
     },
-    "baseDir": "/Users/aaron/Documents/doc/personal/node/egg-test",
+    "baseDir": "/Users/aaron/Documents/doc/personal/node/egg-chat",
     "HOME": "/Users/aaron",
-    "rundir": "/Users/aaron/Documents/doc/personal/node/egg-test/run",
+    "rundir": "/Users/aaron/Documents/doc/personal/node/egg-chat/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -284,7 +283,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/aaron/Documents/doc/personal/node/egg-test/logs/egg-simple",
+      "dir": "/Users/aaron/Documents/doc/personal/node/egg-chat/logs/egg-simple",
       "encoding": "utf8",
       "env": "local",
       "level": "DEBUG",
@@ -372,8 +371,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-session",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -385,8 +384,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-security",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-security",
       "version": "2.7.1"
     },
     "jsonp": {
@@ -398,8 +397,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-jsonp",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -411,8 +410,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-onerror",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -422,8 +421,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-i18n",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -433,8 +432,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-watcher",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -444,8 +443,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-schedule",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -457,8 +456,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-multipart",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-multipart",
       "version": "2.9.1"
     },
     "development": {
@@ -472,8 +471,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-development",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -485,8 +484,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-logrotator",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -496,8 +495,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-static",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -507,18 +506,18 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-view",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-view",
       "version": "2.1.2"
     },
     "ua": {
       "enable": true,
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/lib/plugin/egg-ua",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/lib/plugin/egg-ua",
       "name": "ua",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/config/plugin.js"
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/plugin.js"
     },
     "cors": {
       "enable": true,
@@ -527,8 +526,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-cors",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-cors",
       "version": "2.2.3"
     },
     "mysql": {
@@ -538,8 +537,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-mysql",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-mysql",
       "version": "3.0.0"
     },
     "io": {
@@ -551,8 +550,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/aaron/Documents/doc/personal/node/egg-test/config/plugin.js",
-      "path": "/Users/aaron/Documents/doc/personal/node/egg-test/node_modules/egg-socket.io",
+      "from": "/Users/aaron/Documents/doc/personal/node/egg-chat/config/plugin.js",
+      "path": "/Users/aaron/Documents/doc/personal/node/egg-chat/node_modules/egg-socket.io",
       "version": "4.1.6"
     }
   }

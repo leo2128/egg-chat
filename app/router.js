@@ -20,6 +20,9 @@ module.exports = app => {
   //   获取聊天室 聊天记录
   router.get('/msgList/', controller.msgList.getMsgList);
   //   房间
+  // 获取房间列表
+  router.get('/room/list', controller.rooms.getRoomList);  
+  // 创建房间
   router.post('/room/set', controller.rooms.setRoom);
   //   获取房间是否存在
   router.get('/getRoom/', controller.rooms.getRoom);

@@ -14,6 +14,18 @@ class RoomService extends Service {
     }
     return result;
   }
+//   获取房间列表
+  async getRoomList() {
+    // 假如 我们拿到用户 id 从数据库获取用户详细信息
+    const { app } = this;
+    let result = {};
+    try {
+    result = await app.mysql.select('rooms');
+    } catch (error) {
+    console.log(error);
+    }
+    return result;
+  }
   async getRoomsById(room_id) {
     // 假如 我们拿到用户 id 从数据库获取用户详细信息
     const { app } = this;
@@ -30,12 +42,9 @@ class RoomService extends Service {
     const { app, ctx } = this;
     const room_name = param.roomName;
     const room_master = param.roomMaster;
-    console.log(room_name, 'aaaaaa沙雕');
     const isRoom = await ctx.service.rooms.getRooms({ room_name });
-    console.log(isRoom, 'aaaaaa沙雕');
     let data = {};
     if (!isRoom) {
-      console.log(!isRoom, 'isRoom to create room!');
       const result = await app.mysql.insert('rooms', {
         room_name,
         room_master,
@@ -66,27 +75,40 @@ class RoomService extends Service {
     return result;
   }
   //   关联表 查询用户是否存在
-  async isRoomUser(userId) {
+  async isRoomUser(user_id) {
     const { app } = this;
-    const result = await app.mysql.get('rooms_users_merge', { user_id: userId });
+    const result = await app.mysql.get('rooms_users_merge', { user_id });
     return result;
   }
   // 关联表 绑定用户和房间信息
   async addRoomUser(roomInfo) {
     const { app, ctx } = this;
     let data = {};
+    let result = {};
     if (roomInfo.user_id) {
+        let user_id = roomInfo.user_id
       const isUserHave = await ctx.service.rooms.isRoomUser(roomInfo.user_id);
+      console.log(isUserHave, '查看用户是否已在此房间')
       if (!isUserHave) {
-        const result = await app.mysql.insert('rooms_users_merge',
+        result = await app.mysql.insert('rooms_users_merge',
           roomInfo
         );
-        if (result) {
-          data = await ctx.service.rooms.isRoomUser(roomInfo.user_id);
-        }
       } else {
+        const delResult = await app.mysql.delete('rooms_users_merge', {
+            user_id,
+        });
+        console.log(delResult)
+        if (delResult) {
+            result = await app.mysql.insert('rooms_users_merge',
+                roomInfo
+            );
+        }
         data = isUserHave;
       }
+      if (result) {
+        data = await ctx.service.rooms.isRoomUser(roomInfo.user_id);
+      }
+      console.log(data, '绑定关系返回结果')
     }
     return data;
   }

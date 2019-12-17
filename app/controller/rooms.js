@@ -15,6 +15,16 @@ class RoomController extends Controller {
       data: result,
     };
   }
+  async getRoomList() {
+    const { ctx } = this;
+    // const userId = ctx.query.id;
+    const result = await ctx.service.rooms.getRoomList();
+    ctx.body = {
+      code: 10000,
+      message: result ? '成功' : '暂无房间',
+      data: result,
+    };
+  }
   async setRoom() {
     const { ctx } = this;
     const roomInfo = ctx.request.body;
@@ -36,7 +46,6 @@ class RoomController extends Controller {
       console.log('members');
       console.log(members);
       console.log('members');
-
       members.map(item => {
         userList.push({ userName: item.user_name, id: item.socket_id, userId: item.user_id, level: item.role_level });
         return item.user_name;
