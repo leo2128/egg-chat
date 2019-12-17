@@ -319,7 +319,7 @@ $(function() {
             alert('请先加入房间')
         } else {
             if(msg) {
-                let params = { msg: msg, msg_time: tim, from_user_name: name, from_user_id: userId, room_id: roomId}
+                let params = { msg: msg, msg_time: tim, from_user_name: userName, from_user_id: userId, room_id: roomId}
                 socket.emit('msg', params); //向服务器发送消息
                 $notice.val('')
             }
@@ -413,7 +413,7 @@ $(function() {
 
     // 登录 获取用户信息
     function getUserInfo(userName) {
-        $.get(common_ip + '/users/get', { name }, function(res) {
+        $.get(common_ip + '/users/get', { userName }, function(res) {
             if (res.code == 10000) {
                 userId = res.data.id;
                 sessionStorage.setItem('info', JSON.stringify({ userId, userName }))
