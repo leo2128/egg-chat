@@ -82,6 +82,20 @@ body {
     border-left: 1px solid #a8a5a5;
     position: relative;
 }
+.chat-title {
+    text-align: left;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 21px;
+    width: 100%;
+    background: rgba(255, 255, 255, .93);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    border-bottom: 1px solid #7CB1CF;
+}
 /* 聊天对话组件 */
 .chat {
     position: relative;

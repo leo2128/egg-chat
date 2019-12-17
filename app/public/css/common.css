@@ -22,11 +22,6 @@ html, body, .wrap, .content, .dialog-wrap {
     width: 100%;
     padding: 0 1%;
 }
-.chat-title {
-    text-align: center;
-    font-size: 21px;
-    margin-top: 30px;
-}
 /* 弹窗 */
 .dialog-wrap {
     width: 100%;
