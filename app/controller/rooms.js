@@ -43,9 +43,9 @@ class RoomController extends Controller {
     const userList = [];
     if (roomId) {
       const members = await ctx.service.rooms.getRoomMember(roomId);
-      console.log('members');
-      console.log(members);
-      console.log('members');
+    //   console.log('members');
+    //   console.log(members);
+    //   console.log('members');
       members.map(item => {
         userList.push({ userName: item.user_name, id: item.socket_id, userId: item.user_id, level: item.role_level });
         return item.user_name;

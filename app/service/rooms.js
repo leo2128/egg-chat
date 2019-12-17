@@ -88,7 +88,6 @@ class RoomService extends Service {
     if (roomInfo.user_id) {
         let user_id = roomInfo.user_id
       const isUserHave = await ctx.service.rooms.isRoomUser(roomInfo.user_id);
-      console.log(isUserHave, '查看用户是否已在此房间')
       if (!isUserHave) {
         result = await app.mysql.insert('rooms_users_merge',
           roomInfo
@@ -97,7 +96,6 @@ class RoomService extends Service {
         const delResult = await app.mysql.delete('rooms_users_merge', {
             user_id,
         });
-        console.log(delResult)
         if (delResult) {
             result = await app.mysql.insert('rooms_users_merge',
                 roomInfo
@@ -108,7 +106,6 @@ class RoomService extends Service {
       if (result) {
         data = await ctx.service.rooms.isRoomUser(roomInfo.user_id);
       }
-      console.log(data, '绑定关系返回结果')
     }
     return data;
   }

@@ -39,7 +39,6 @@ module.exports = () => {
 
     // 检查房间是否存在，不存在则踢出用户
     const hasRoom = await ctx.service.rooms.getRoomsById(roomId);
-    console.log(hasRoom, '有房间iD吗？');
 
     logger.debug('#has_exist', hasRoom);
 
@@ -65,17 +64,17 @@ module.exports = () => {
       //   const beforeJoinMembers = await ctx.service.rooms.getRoomMember(roomId);
       //   console.log(beforeJoinMembers, 'beforeJoinMembers');
       //   if (!beforeJoinMembers.length) {
-      console.log(userId, '刘晋阳 userId啊');
-      console.log(hasRoom.room_master, '房主 userId啊');
+    //   console.log(userId, '刘晋阳 userId啊');
+    //   console.log(hasRoom.room_master, '房主 userId啊');
       if (userId === hasRoom.room_master) {
         params.role_level = 2;
       }
       const joinResult = await ctx.service.rooms.addRoomUser(params);
 
-      console.log(joinResult, '添加关联关系');
+      logger.debug(joinResult, '添加关联关系');
       try {
         const members = await ctx.service.rooms.getRoomMember(roomId);
-        console.log(members, 'members  => members join');
+        // console.log(members, 'members  => members join');
         //   加入之后，获取 更新人员列表数据
         const userList = getMemberList(members);
         nsp.to(roomId).emit('online', {
@@ -84,7 +83,7 @@ module.exports = () => {
           target: 'participator',
           message: '有新成员加入聊天室',
         });
-        console.log(userList, 'members  => members join');
+        // console.log(userList, 'members  => members join');
       } catch (error) { throw error; }
       socket.join(roomId);
     }
@@ -97,7 +96,7 @@ module.exports = () => {
     console.log('#leave', userId);
     if (userId) {
       const delMemeber = ctx.service.rooms.delRoomUser(userId);
-      console.log(delMemeber, '清除关联关系');
+    //   console.log(delMemeber, '清除关联关系');
       try {
         const members = await ctx.service.rooms.getRoomMember(roomId);
         //   获取人员列表数据
@@ -108,7 +107,7 @@ module.exports = () => {
           target: 'participator',
           message: '有成员离开了',
         });
-        console.log(userList, 'members  => members leave');
+        // console.log(userList, 'members  => members leave');
       } catch (error) { throw error; }
 
     }
