@@ -1,0 +1,94 @@
+body {
+  background: url('../assets/images/zuo.jpg') no-repeat center 0;  
+  background-size: cover;
+}
+.content {
+    padding-top: 50px;
+    overflow: hidden;
+}
+.msg-wrap {
+    margin: 0 auto;
+    height: calc(100vh - 60px);
+    border: 1px solid rgb(0, 171, 238);
+}
+.msg-wrap .chat-name {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, .9);
+}
+.msg-wrap .message {
+    padding: 10px 15px 80px 15px;
+    background: rgba(255, 255, 255, .9);
+    height: calc(100% - 155px);
+    overflow: hidden;
+    border-left: 1px solid #a8a5a5;
+    position: relative;
+}
+.chat {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+.chat > div {
+    width: 100%;
+    padding: 0 10px;
+}
+.chat .msg-cont + .msg-cont {
+    margin-top:  20px;
+}
+.chat > .msg-cont > div {
+    min-height: 60px;
+    position: relative;
+    display: table;
+    padding: 10px 10px;
+    border-radius: 7px;
+    background-color:#9EEA6A;
+    display: table-cell;
+    vertical-align: middle;
+}
+.chat > .msg-cont .you {
+    top: 20px;
+    left: 5px;
+    background-color: #FC3;
+}
+.me:after,.you:before{   /*用伪类写出小三角形*/
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    position: absolute;
+    top: 11px;
+}
+.me:after{    
+    border-left: 16px solid #9EEA6A;
+    right: -30px;
+}
+.you:before{    
+    border-right: 16px solid #FC3;
+    left: -30px;
+}
+.chat .me {
+    text-align: right;
+    top: 20px;
+    float: right;
+    right: 25px;
+}
+.me div {
+    text-align: right;
+}
+.user_name, .user_tim {
+    width: auto;
+}
+.chat_msg {
+    display: inline-block;
+    max-width: 250px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+}
+.disnone {
+    pointer-events: none;
+}

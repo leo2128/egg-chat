@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+.clear::after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+html, body, .wrap, .content, .dialog-wrap {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1%;
+    min-width: 750px;
+}
+/* 弹窗 */
+.dialog-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background: rgba(0,0,0,.6);
+    z-index: 999999;
+    display: none;
+}
+.dialog-title {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.close {
+    float: right;
+    cursor: pointer;
+}
+.dialog {
+    width: 450px;
+    position: relative;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -199px;
+    margin-left: -275px;
+    border-radius: 16px;
+    padding: 30px;
+    overflow: hidden;
+}
+.dialog label {
+    width: 100%;
+    height: 45px;
+    line-height: 35px;
+    display: block;
+}
+.dialog label input {
+    width: calc(100% - 60px);
+    height: 35px;
+    border: 1px solid #000;
+}
+.dialog button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background: #fe0;
+    border-radius: 5px;
+}
+.chat-wrap > .dialog label input {
+    width: calc(100% - 85px);
+}
+/* 输入框 */
+.inpu-wrap {
+    position: absolute;
+    bottom: 15px;
+    width: calc(100% - 30px);
+}
+.inpu-wrap input{
+    height: 30px;
+    width: calc(100% - 100px);
+    line-height: 30px;
+    border: 1px solid lightblue;
+    outline: navy;
+}
+.inpu-wrap button {
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    background: tan;
+    margin-left: 10px;
+}
