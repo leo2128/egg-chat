@@ -75,8 +75,6 @@ $(function() {
             success: (res) => {
                 if (res.code === 10000) {
                     let { id, roomName } = res.data
-                    console.log(id);
-                    console.log(roomName);
                     $chatTitle.html(roomName)
                     sessionStorage.setItem('roomInfo', JSON.stringify({ roomId: id, roomName }))
                     isLoadJoin();
@@ -126,7 +124,6 @@ $(function() {
             sessionStorage.setItem('roomInfo', JSON.stringify({ roomId, roomName }))
             isLoadJoin();
             $('.room-wrap').hide()
-            console.log(roomName)
         })
     }
 
@@ -188,7 +185,6 @@ $(function() {
 
         // 监听服务器推送数据
         socket.on('receiveMsg',function(data){
-            console.log(list)
             list.push(JSON.parse(data))
             renderHtml(list);
         });
@@ -398,7 +394,6 @@ $(function() {
     // 删除信息
     function delInfo(id) {
         $.get(common_ip + '/users/del', { id }, (res) => {
-            console.log(res);
             if (res.code === 1000) {
                 getList()
             }
@@ -413,7 +408,7 @@ $(function() {
 
     // 登录 获取用户信息
     function getUserInfo(userName) {
-        $.get(common_ip + '/users/get', { userName }, function(res) {
+        $.get(common_ip + '/users/get', { name: userName }, function(res) {
             if (res.code == 10000) {
                 userId = res.data.id;
                 sessionStorage.setItem('info', JSON.stringify({ userId, userName }))
@@ -472,7 +467,7 @@ $(function() {
         let info = JSON.parse(sessionStorage.getItem('info'))
         let roomInfo = JSON.parse(sessionStorage.getItem('roomInfo'))
         if(info || roomInfo) {
-            info ? (userName = info.userName, userId = info.userId) : 0
+            info ? (userName = info.userName, userId = info.userId, isIfLogin(userId)) : 0
             roomInfo ? (roomId = roomInfo.roomId, roomName = roomInfo.roomName, $chatTitle.html(roomName)) : 0
             if (roomId) {
                 let params = {
@@ -486,7 +481,6 @@ $(function() {
                 connection()
                 // 聊天消息列表
                 getMsgList();
-                isIfLogin(userId)
             }
             
         }
