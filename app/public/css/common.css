@@ -99,3 +99,9 @@ html, body, .wrap, .content, .dialog-wrap {
     width: 1000px;
     margin: 0 auto;
 }
+/* 手机 */
+@media screen and (max-width: 500px) {
+    .msg-wrap {
+        width: 100% !important;
+    }
+}
