@@ -95,8 +95,8 @@ module.exports = () => {
     logger.debug('#leave', roomId);
     console.log('#leave', userId);
     if (userId) {
-      const delMemeber = ctx.service.rooms.delRoomUser(userId);
-    //   console.log(delMemeber, '清除关联关系');
+      const delMemeber = await ctx.service.rooms.delRoomUser(userId);
+      logger.debug(delMemeber, '清除关联关系')
       try {
         const members = await ctx.service.rooms.getRoomMember(roomId);
         //   获取人员列表数据
