@@ -36,7 +36,7 @@ $(function() {
     // 是否已登录
     isLoadJoin();
 
-    // 创建房间
+    // 创建房间 点击事件
     function creatBtn() {
         $(document).on('click', '#creat', function(){
             if (!userId) {
@@ -51,12 +51,12 @@ $(function() {
         })
     }
 
-    // 创建房间弹窗展示
+    // 创建房间 弹窗展示
     function creatRoomDialog() {
         $chatWrap.show();
     }
 
-    // 创建房间
+    // 创建房间 调取接口
     function creatRoom() {
         let cRoomName = Trim($('#room-name').val())
         if(!cRoomName) {
@@ -143,7 +143,7 @@ $(function() {
             }
         })
     }
-    // 获取人员列表
+    // 获取房间人员列表
     function getMembers(roomId) {
         $.get('/getMembers', { roomId }, res => {
             if (res.code === 10000) {
@@ -162,7 +162,7 @@ $(function() {
         })
     }
     
-    // 连接成功
+    // socket 长连接
     function connection() {
         // 建立连接
         socket.on('connect', function(data) {
@@ -191,10 +191,10 @@ $(function() {
         
         //监听socket断开与重连。
         socket.on('disconnect', function() {
-            console.log("与服务断器开");
+            errormessage('与服务断器开')
         });
         socket.on('reconnect', function() {
-            console.log("重新连接到服务器");
+            errormessage('重新连接到服务器')
         });
         // 假值信息
         socket.on('terrible', (data) => {
