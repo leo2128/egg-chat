@@ -214,6 +214,7 @@ $(function() {
                 getMembers(roomId)
             }
         });
+        // 测试一下
     }
 
     window.socket = socket;
