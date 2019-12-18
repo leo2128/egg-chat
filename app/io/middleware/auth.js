@@ -14,7 +14,7 @@ module.exports = () => {
     const { roomId, userId, userName } = query;
     logger.debug('#user_info', id, roomId, userId);
 
-    // 踢出房间
+    // 踢出房间  没用到 redis
     const tick = (id, msg) => {
       logger.debug('#tick', id, msg);
 
@@ -42,13 +42,14 @@ module.exports = () => {
 
     logger.debug('#has_exist', hasRoom);
 
-    if (!hasRoom) {
-      tick(id, {
-        type: 'deleted',
-        message: 'deleted, room has been deleted.',
-      });
-      return;
-    }
+    // 调用tick方法，踢出成员  没用到
+    // if (!hasRoom) {
+    //   tick(id, {
+    //     type: 'deleted',
+    //     message: 'deleted, room has been deleted.',
+    //   });
+    //   return;
+    // }
 
     // sql语句 添加 关联关系
     logger.debug('#join', roomId, userId);
@@ -61,11 +62,6 @@ module.exports = () => {
         role_level: 0,
       };
       //   加入之前 获取 该房间内 是否有人
-      //   const beforeJoinMembers = await ctx.service.rooms.getRoomMember(roomId);
-      //   console.log(beforeJoinMembers, 'beforeJoinMembers');
-      //   if (!beforeJoinMembers.length) {
-    //   console.log(userId, '刘晋阳 userId啊');
-    //   console.log(hasRoom.room_master, '房主 userId啊');
       if (userId === hasRoom.room_master) {
         params.role_level = 2;
       }

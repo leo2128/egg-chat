@@ -200,7 +200,10 @@
       }
     },
     "io": {
-      "init": {},
+      "init": {
+        "path": "/socket.io",
+        "allowRequest": "<Function bound >"
+      },
       "namespace": {
         "/": {
           "connectionMiddleware": [
