@@ -479,6 +479,7 @@ $(function() {
                 userName ? params['userName'] = userName : 0
                 console.log(socket_ip)
                 socket = io(socket_ip, {
+                    path: '/socket',
                     query: params
                 });
                 connection()

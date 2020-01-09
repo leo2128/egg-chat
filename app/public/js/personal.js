@@ -24,6 +24,7 @@ $(function() {
 
     function setChat() {
         socket = io(socket_ip, {
+            path: '/socket',
             query: {
                 id: socketId,
                 userId,
