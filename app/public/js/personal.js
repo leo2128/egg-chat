@@ -124,7 +124,7 @@ $(function() {
     // 获取聊天消息列表
     function getMsgList() {
         let params = { userId, toUserId }
-        $.get('/msg/chatList', params, function(res) {
+        $.get(common_ip + '/msg/chatList', params, function(res) {
             if(res.code == 10000){
                 list = res.data;
                 renderHtml(list);

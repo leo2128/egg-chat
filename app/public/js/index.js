@@ -129,7 +129,7 @@ $(function() {
 
     // 获取房间列表 打开弹窗
     function joinRoom() {
-        $.get('/room/list', function(res) {
+        $.get(common_ip + '/room/list', function(res) {
             if (res.code === 10000) {
                 roomList = res.data
                 roomId = roomList[0].room_id
@@ -145,7 +145,7 @@ $(function() {
     }
     // 获取房间人员列表
     function getMembers(roomId) {
-        $.get('/getMembers', { roomId }, res => {
+        $.get(common_ip + '/getMembers', { roomId }, res => {
             if (res.code === 10000) {
                 let list = res.data
                 let info = JSON.parse(sessionStorage.getItem('info'))
@@ -426,7 +426,7 @@ $(function() {
     // 获取聊天消息列表
     function getMsgList() {
         let params = userId ? { userId, roomId } : { roomId }
-        $.get('/msgList', params, function(res) {
+        $.get(common_ip + '/msgList', params, function(res) {
             if(res.code == 10000){
                 list = res.data;
                 renderHtml(list);
