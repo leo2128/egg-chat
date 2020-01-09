@@ -71,7 +71,7 @@ $(function() {
             headers: {
                 'Content-Type': 'application/json',
                 'x-csrf-token': getCookie('csrfToken')
-            },
+            },   
             success: (res) => {
                 if (res.code === 10000) {
                     let { id, roomName } = res.data
