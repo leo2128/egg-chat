@@ -23,6 +23,7 @@ $(function() {
     var roomId = null;
     var socket = null;
     let ip = window.location.host + '/chat';
+    let socket_ip = window.location.host + '/socket';
     let common_ip = 'http://' + ip;
 
     // 点击成员 私聊
@@ -476,8 +477,8 @@ $(function() {
                 }
                 userId ? params['userId'] = userId : 0
                 userName ? params['userName'] = userName : 0
-                console.log(ip)
-                socket = io(ip, {
+                console.log(socket_ip)
+                socket = io(socket_ip, {
                     query: params
                 });
                 connection()

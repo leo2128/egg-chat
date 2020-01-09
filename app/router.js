@@ -40,11 +40,11 @@ module.exports = app => {
   //   io.of('/').route('server', io.controller.home.index);
   //   io.of('/').route('chat', io.controller.chat.index);
   //  聊天室 - 发送消息
-  io.of('/').route('msg', io.controller.chat.message);
+  io.of('/socket').route('msg', io.controller.chat.message);
   //   p2p - 发送消息
-  io.of('/').route('personMsg', io.controller.chat.personalMsg);
+  io.of('/socket').route('personMsg', io.controller.chat.personalMsg);
   //   聊天室 - 踢出成员
-  io.of('/').route('delMember', io.controller.chat.delMember);
+  io.of('/socket').route('delMember', io.controller.chat.delMember);
   //   io.of('/').route('user:online', io.controller.chat.online);
 
 };

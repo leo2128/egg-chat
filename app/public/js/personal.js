@@ -7,6 +7,7 @@ $(function() {
     var socketId = getQueryString('id');
     var socket = null;
     let ip = window.location.host+'/chat';
+    let socket_ip = window.location.host + '/socket';
     let common_ip = 'http://' + ip;
 
     var toInfo = JSON.parse(uncompileStr(getQueryString('session')))
@@ -22,7 +23,7 @@ $(function() {
     setChat();
 
     function setChat() {
-        socket = io(ip, {
+        socket = io(socket_ip, {
             query: {
                 id: socketId,
                 userId,
