@@ -22,7 +22,7 @@ $(function() {
     var userId = null;
     var roomId = null;
     var socket = null;
-    let ip = window.location.host + '/chat/';
+    let ip = window.location.host + '/chat';
     let common_ip = 'http://' + ip;
 
     // 点击成员 私聊
