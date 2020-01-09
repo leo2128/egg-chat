@@ -46,6 +46,5 @@ module.exports = app => {
   //   聊天室 - 踢出成员
   io.of('/').route('delMember', io.controller.chat.delMember);
   //   io.of('/').route('user:online', io.controller.chat.online);
-  io.of('/').route('exchange', io.controller.nsp.exchange);
 
 };

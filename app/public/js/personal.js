@@ -6,7 +6,7 @@ $(function() {
     var list = [];
     var socketId = getQueryString('id');
     var socket = null;
-    let ip = window.location.host;
+    let ip = window.location.host+'/chat';
     let common_ip = 'http://' + ip;
 
     var toInfo = JSON.parse(uncompileStr(getQueryString('session')))
@@ -124,7 +124,7 @@ $(function() {
     // 获取聊天消息列表
     function getMsgList() {
         let params = { userId, toUserId }
-        $.get('/msg/chatList', params, function(res) {
+        $.get(common_ip + '/msg/chatList', params, function(res) {
             if(res.code == 10000){
                 list = res.data;
                 renderHtml(list);
