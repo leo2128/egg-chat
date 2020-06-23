@@ -22,9 +22,11 @@ $(function() {
     var userId = null;
     var roomId = null;
     var socket = null;
-    let ip = window.location.host + '/chat';
-    let socket_ip = window.location.host + '/socket';
-    let common_ip = 'http://' + ip;
+    // let ip = window.location.host + '/chat';
+    // let socket_ip = window.location.host + '/socket';
+    let ip = window.location.host + '';
+    let socket_ip = window.location.origin + '';
+    let common_ip = window.location.protocol + '//' + ip;
 
     // 点击成员 私聊
     personalChat();
@@ -477,6 +479,7 @@ $(function() {
                 }
                 userId ? params['userId'] = userId : 0
                 userName ? params['userName'] = userName : 0
+                alert(JSON.stringify(params))
                 socket = io(socket_ip, {
                     path: '/socket',
                     query: params
