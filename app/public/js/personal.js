@@ -7,9 +7,9 @@ $(function() {
     var socketId = getQueryString('id');
     var socket = null;
 
-    let ip = window.location.host+'/chat';
+    let ip = window.location.origin+'/chat';
     let socket_ip = window.location.origin + '/socket';
-    let common_ip = window.location.protocol + '//' + ip;
+    let common_ip = ip;
 
     var toInfo = JSON.parse(uncompileStr(getQueryString('session')))
     var toUserId = toInfo.to_userId

@@ -22,11 +22,11 @@ $(function() {
     var userId = null;
     var roomId = null;
     var socket = null;
-    let ip = window.location.host + '/chat';
+    let ip = window.location.origin + '/chat';
     let socket_ip = window.location.origin + '/socket';
     // let ip = window.location.host + '';
     // let socket_ip = window.location.origin + '';
-    let common_ip = window.location.protocol + '//' + ip;
+    let common_ip = ip;
 
     // 点击成员 私聊
     personalChat();
