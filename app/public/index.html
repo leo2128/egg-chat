@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <div class="margin-auto">
+                <button class="send" id="send">注册账号</button>
+                <button class="send" id="load">登录账号</button>
+                <button class="send" id="creat">创建房间</button>
+                <button class="send" id="join">加入房间</button>
+            </div>
+            <div class="msg-wrap">
+                <!-- <pre id="message" class="message"></pre> -->
+                <div class="personal-list">
+                    <p>消息成员</p>
+                    <ul id="members"></ul>
+                </div>
+                <div class="message">
+                    <p id="chat-name" class="chat-title">聊天室</p>
+                    <div id="chat-wrap" class="chat clear">
+                    </div>
+                    <div class="inpu-wrap">
+                        <input type="text" id="notice">
+                        <button id="post">发送消息</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 登录 创建账号 -->
+        <div class="dialog-wrap user-wrap">
+            <div class="dialog">
+                <p class="dialog-title"><span class="action-txt">登录</span>账号<i class="close">x</i></p>
+                <label for="name">账号：<input id="name" type="text" placeholder="请输入账号"></label>
+                <button id="sub" class="action-txt">登录</button>
+            </div>
+        </div>
+        <!-- 房间选择 -->
+        <div class="dialog-wrap room-wrap">
+            <div class="dialog">
+                <p class="dialog-title">加入房间<i class="close close-room-s">x</i></p>
+                <label for="room-select">房间名称：<select id="room-select" type="text" placeholder="请输入房间名称"></select></label>
+                <button id="sub-join" class="action-txt">加入</button>
+            </div>
+        </div>
+        <!-- 创建聊天室 -->
+        <div class="dialog-wrap chat-wrap">
+            <div class="dialog">
+                <p class="dialog-title">创建房间<i class="close close-room">x</i></p>
+                <label for="room-name">房间名称：<input id="room-name" type="text" placeholder="请输入房间名称"></label>
+                <button id="confirm" class="action-txt">确定</button>
+            </div>
+        </div>
+        <div class="onmessage online-message"></div>
+        <div class="onmessage error-message"></div>
+    </div>
+    <script src="./js/jq-3.3.1.js"></script>
+    <script src="./js/utils/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

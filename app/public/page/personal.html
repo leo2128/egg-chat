@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/personal.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <div class="msg-wrap">
+                <p class="chat-name">与<span id="chat-you" >阿阳</span>的聊天</p>
+                <div class="message">
+                    <div id="chat-wrap" class="chat clear">
+                    </div>
+                    <div class="inpu-wrap">
+                        <input type="text" id="notice">
+                        <button id="post">发送消息</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jq-3.3.1.js"></script>
+    <script src="../js/utils/socket.io.js"></script>
+    <script src="../js/personal.js"></script>
+</body>
+</html>
